@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LocationBasedApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnLocation">Get Current Location</string>
+    <string name="title_activity_show_lat_long">Location List</string>
+    <string name="calculateArea">...</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="Popular">B1</string>
+    <string name="AZ">B2</string>
+    <string name="Category">B3</string>
+    <string name="NearBy">NearBy</string>
+    <string name="maps_key">AIzaSyC80LwC6wK1IrUbPL8Z3fJG4NPSO-yTeyk</string>
+
+</resources>

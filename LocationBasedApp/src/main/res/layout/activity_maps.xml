@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    tools:ignore="MergeRootFrame">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:id="@+id/txtMapArea"
+        android:layout_gravity="left|top"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:text="Tag it !!"
+        android:id="@+id/btnMapTagIt"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="tagCurrentLocation"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle View"
+        android:id="@+id/button"
+        android:onClick="toggleView"
+        android:layout_gravity="left|bottom" />
+
+</FrameLayout>

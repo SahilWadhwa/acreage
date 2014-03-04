@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark Current Location"
+        android:id="@+id/btnAddToList"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="100dp"
+        android:onClick="addToList"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To MAPS"
+        android:id="@+id/buttonMaps"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="50dp"
+        android:onClick="showMaps"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLocation"
+        android:id="@+id/btnLocation"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="recordCurrentLocation"
+        android:layout_marginBottom="150dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="189dp"
+        android:id="@+id/listView"
+        android:layout_gravity="left|top"
+        android:background="@drawable/abc_cab_background_top_holo_light" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:text="Current Loc -"
+        android:id="@+id/textLocationData"
+        android:layout_gravity="left|center_vertical" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear All Locations"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="clearList"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Area in sq mtr - "
+        android:id="@+id/txtArea"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+</FrameLayout>
